@@ -1,12 +1,13 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-
+import { StaticImage, getSrc } from "gatsby-plugin-image"
+import poker_desktop from "../images/4poker-d.png"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => (
+export function IndexPage() {
+  return (
   <Layout>
-    <Seo title="Coming Soon" />
+    <Seo title="Coming Soon"/>
     <div className="holder">
       <StaticImage src="../images/4poker-d.png" alt="4 Poker Coming Soon" className="desk"/>
       <StaticImage src="../images/4poker-t.png" alt="4 Poker Coming Soon" className="tablet"/>
@@ -14,7 +15,8 @@ const IndexPage = () => (
       <StaticImage src="../images/4poker-m.png" alt="4 Poker Coming Soon" className="mobile"/>
     </div>
   </Layout>
-)
+  )
+}
 
 export const Head = () => <Seo title="Coming Soon" />
 

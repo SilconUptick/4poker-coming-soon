@@ -21,6 +21,7 @@ module.exports = {
       options: {
         formats: [`auto`, `webp`],
         placeholder: `dominantColor`,
+        breakpoints: [200, 577, 768, 1181],
         quality: 75,
         name: `4Poker`,
         short_name: `4Poker`,

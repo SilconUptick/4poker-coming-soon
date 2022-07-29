@@ -1,22 +1,22 @@
 html, body, .holder {width:100%; height:100vh;}
 body { background-size: cover; background-position: center center;}
 .holder {display: flex; justify-content: center; align-items: center;}
-.mobile, .phablet, .tablet, .desk {display: none;}
+.mobile, .phablet, .tablet, .desk {display: none !important;}
 
 @media screen and (min-width: 200px) and ( max-width: 576px ) {
   body { background-image: url(../images/background-m.jpg); }
-  .mobile { display: block;}
+  .mobile { display: block !important;}
 }
 @media screen and (min-width: 577px) and (max-width: 767px) {
   body { background-image: url(../images/background-p.jpg);}
-  .phablet { display: block;}
+  .phablet { display: block !important;}
 }
 @media screen and (min-width: 768px) and (max-width: 1180px) {
-  .tablet { display: block; }
+  .tablet { display: block !important; }
   body { background-image: url(../images/background-t.jpg); }
 }
-@media screen and (min-width: 1181px) and (max-width: 6000px){
-  .desk {display: block;}
+@media screen and (min-width: 1181px){
+  .desk {display: block !important;}
   body {background-image: url(../images/background-d.jpg);}
 }
 
